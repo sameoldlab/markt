@@ -11,7 +11,7 @@ importers:
       '@atproto/api':
         specifier: ^0.13.25
         version: 0.13.25
-      '@atproto/oauth-client-browser':
+      '@atproto/oauth-client':
         specifier: ^0.3.5
         version: 0.3.5
       '@eslint/compat':
@@ -102,20 +102,11 @@ packages:
   '@atproto/did@0.1.3':
     resolution: {integrity: sha512-ULD8Gw/KRRwLFZ2Z2L4DjmdOMrg8IYYlcjdSc+GQ2/QJSVnD2zaJJVTLd3vls121wGt/583rNaiZTT2DpBze4w==}
 
-  '@atproto/jwk-jose@0.1.2':
-    resolution: {integrity: sha512-lDwc/6lLn2aZ/JpyyggyjLFsJPMntrVzryyGUx5aNpuTS8SIuc4Ky0REhxqfLopQXJJZCuRRjagHG3uP05/moQ==}
-
-  '@atproto/jwk-webcrypto@0.1.2':
-    resolution: {integrity: sha512-vTBUbUZXh0GI+6KJiPGukmI4BQEHFAij8fJJ4WnReF/hefAs3ISZtrWZHGBebz+q2EcExYlnhhlmxvDzV7veGw==}
-
   '@atproto/jwk@0.1.1':
     resolution: {integrity: sha512-6h/bj1APUk7QcV9t/oA6+9DB5NZx9SZru9x+/pV5oHFI9Xz4ZuM5+dq1PfsJV54pZyqdnZ6W6M717cxoC7q7og==}
 
   '@atproto/lexicon@0.4.4':
     resolution: {integrity: sha512-QFEmr3rpj/RoAmfX9ALU/asBG/rsVtQZnw+9nOB1/AuIwoxXd+ZyndR6lVUc2+DL4GEjl6W2yvBru5xbQIZWyA==}
-
-  '@atproto/oauth-client-browser@0.3.5':
-    resolution: {integrity: sha512-6zP+vjDRLvvyYl7Oo+zN6OqO1aZ2DbiZa91Eba1MmsRHdmCq6jMwfwNGBzsd1nGQRDDuYG81zEyAY+w5B8fEGQ==}
 
   '@atproto/oauth-client@0.3.5':
     resolution: {integrity: sha512-Rr5GKP5YSO28ek1TbyrhO1HpOQYryVm/h9pgYDGzm1diq8kWHsH1se5p1wdFvyBh3Fd4WRw8IE++y2JIeTDkjA==}
@@ -909,9 +900,6 @@ packages:
   iso-datestring-validator@2.2.2:
     resolution: {integrity: sha512-yLEMkBbLZTlVQqOnQ4FiMujR6T4DEcCb1xizmvXS+OxuhwcbtynoosRzdMA69zZCShCNAbi+gJ71FxZBBXx1SA==}
 
-  jose@5.9.6:
-    resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==}
-
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -1407,16 +1395,6 @@ snapshots:
     dependencies:
       zod: 3.24.1
 
-  '@atproto/jwk-jose@0.1.2':
-    dependencies:
-      '@atproto/jwk': 0.1.1
-      jose: 5.9.6
-
-  '@atproto/jwk-webcrypto@0.1.2':
-    dependencies:
-      '@atproto/jwk': 0.1.1
-      '@atproto/jwk-jose': 0.1.2
-
   '@atproto/jwk@0.1.1':
     dependencies:
       multiformats: 9.9.0
@@ -1429,17 +1407,6 @@ snapshots:
       iso-datestring-validator: 2.2.2
       multiformats: 9.9.0
       zod: 3.24.1
-
-  '@atproto/oauth-client-browser@0.3.5':
-    dependencies:
-      '@atproto-labs/did-resolver': 0.1.6
-      '@atproto-labs/handle-resolver': 0.1.5
-      '@atproto-labs/simple-store': 0.1.1
-      '@atproto/did': 0.1.3
-      '@atproto/jwk': 0.1.1
-      '@atproto/jwk-webcrypto': 0.1.2
-      '@atproto/oauth-client': 0.3.5
-      '@atproto/oauth-types': 0.2.1
 
   '@atproto/oauth-client@0.3.5':
     dependencies:
@@ -2187,8 +2154,6 @@ snapshots:
   isexe@2.0.0: {}
 
   iso-datestring-validator@2.2.2: {}
-
-  jose@5.9.6: {}
 
   js-yaml@4.1.0:
     dependencies:
